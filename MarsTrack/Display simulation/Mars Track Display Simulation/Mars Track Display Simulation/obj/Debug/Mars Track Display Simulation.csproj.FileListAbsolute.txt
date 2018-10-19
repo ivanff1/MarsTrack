@@ -1,0 +1,10 @@
+D:\Projects\Challenges\MarsTrack\MarsTrack\Display simulation\Mars Track Display Simulation\Mars Track Display Simulation\bin\Debug\Mars Track Display Simulation.exe.config
+D:\Projects\Challenges\MarsTrack\MarsTrack\Display simulation\Mars Track Display Simulation\Mars Track Display Simulation\bin\Debug\Mars Track Display Simulation.exe
+D:\Projects\Challenges\MarsTrack\MarsTrack\Display simulation\Mars Track Display Simulation\Mars Track Display Simulation\bin\Debug\Mars Track Display Simulation.pdb
+D:\Projects\Challenges\MarsTrack\MarsTrack\Display simulation\Mars Track Display Simulation\Mars Track Display Simulation\obj\Debug\Mars_Track_Display_Simulation.MainPanelUC.resources
+D:\Projects\Challenges\MarsTrack\MarsTrack\Display simulation\Mars Track Display Simulation\Mars Track Display Simulation\obj\Debug\Mars_Track_Display_Simulation.MarsTrack.resources
+D:\Projects\Challenges\MarsTrack\MarsTrack\Display simulation\Mars Track Display Simulation\Mars Track Display Simulation\obj\Debug\Mars_Track_Display_Simulation.Properties.Resources.resources
+D:\Projects\Challenges\MarsTrack\MarsTrack\Display simulation\Mars Track Display Simulation\Mars Track Display Simulation\obj\Debug\Mars Track Display Simulation.csproj.GenerateResource.cache
+D:\Projects\Challenges\MarsTrack\MarsTrack\Display simulation\Mars Track Display Simulation\Mars Track Display Simulation\obj\Debug\Mars Track Display Simulation.csproj.CoreCompileInputs.cache
+D:\Projects\Challenges\MarsTrack\MarsTrack\Display simulation\Mars Track Display Simulation\Mars Track Display Simulation\obj\Debug\Mars Track Display Simulation.exe
+D:\Projects\Challenges\MarsTrack\MarsTrack\Display simulation\Mars Track Display Simulation\Mars Track Display Simulation\obj\Debug\Mars Track Display Simulation.pdb

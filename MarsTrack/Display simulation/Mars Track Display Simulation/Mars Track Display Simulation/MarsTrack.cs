@@ -10,11 +10,12 @@ using System.Windows.Forms;
 
 namespace Mars_Track_Display_Simulation
 {
-    public partial class Form1 : Form
+    public partial class MarsTrack : Form
     {
-        public Form1()
+        public MarsTrack()
         {
             InitializeComponent();
+            WindowState = FormWindowState.Maximized;
         }
     }
 }
