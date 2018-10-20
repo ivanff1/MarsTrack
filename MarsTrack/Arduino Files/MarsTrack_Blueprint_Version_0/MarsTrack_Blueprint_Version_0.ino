@@ -26,15 +26,19 @@ void loop() {
   if(commandStr.equals("TEMPD"))
   {
      Temperature();
+     delay(5);
   }
   else if(commandStr.equals("HUMID"))
   {
       Humidity();
+      delay(5);
   }
   else if(commandStr.equals("SOILM"))
   {
       SoilMoisture();
+      delay(5);
   }   
+
 }
 
 void Rangefinder(){

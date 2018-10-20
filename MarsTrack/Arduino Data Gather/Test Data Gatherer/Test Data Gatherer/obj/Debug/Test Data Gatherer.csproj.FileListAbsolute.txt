@@ -1,0 +1,10 @@
+D:\Projects\Challenges\MarsTrack\MarsTrack\Arduino Data Gather\Test Data Gatherer\Test Data Gatherer\bin\Debug\Test Data Gatherer.exe.config
+D:\Projects\Challenges\MarsTrack\MarsTrack\Arduino Data Gather\Test Data Gatherer\Test Data Gatherer\bin\Debug\Test Data Gatherer.exe
+D:\Projects\Challenges\MarsTrack\MarsTrack\Arduino Data Gather\Test Data Gatherer\Test Data Gatherer\bin\Debug\Test Data Gatherer.pdb
+D:\Projects\Challenges\MarsTrack\MarsTrack\Arduino Data Gather\Test Data Gatherer\Test Data Gatherer\obj\Debug\Test Data Gatherer.csprojResolveAssemblyReference.cache
+D:\Projects\Challenges\MarsTrack\MarsTrack\Arduino Data Gather\Test Data Gatherer\Test Data Gatherer\obj\Debug\Test_Data_Gatherer.Form1.resources
+D:\Projects\Challenges\MarsTrack\MarsTrack\Arduino Data Gather\Test Data Gatherer\Test Data Gatherer\obj\Debug\Test_Data_Gatherer.Properties.Resources.resources
+D:\Projects\Challenges\MarsTrack\MarsTrack\Arduino Data Gather\Test Data Gatherer\Test Data Gatherer\obj\Debug\Test Data Gatherer.csproj.GenerateResource.cache
+D:\Projects\Challenges\MarsTrack\MarsTrack\Arduino Data Gather\Test Data Gatherer\Test Data Gatherer\obj\Debug\Test Data Gatherer.csproj.CoreCompileInputs.cache
+D:\Projects\Challenges\MarsTrack\MarsTrack\Arduino Data Gather\Test Data Gatherer\Test Data Gatherer\obj\Debug\Test Data Gatherer.exe
+D:\Projects\Challenges\MarsTrack\MarsTrack\Arduino Data Gather\Test Data Gatherer\Test Data Gatherer\obj\Debug\Test Data Gatherer.pdb
