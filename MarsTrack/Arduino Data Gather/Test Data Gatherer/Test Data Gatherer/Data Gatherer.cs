@@ -74,7 +74,7 @@ namespace Test_Data_Gatherer
                 {                    
                     commPort.Write("TEMPD");
                     string tempData = commPort.ReadLine();
-                    File.AppendAllText(@"D:\Projects\Challenges\MarsTrack\MarsTrack\Gathered Data\TempData(" + legalDate + ").txt", "<[" + DateTime.Now.ToString() + "]>" + tempData + Environment.NewLine);
+                    File.AppendAllText(@"E:\Git Repos\MarsTrack\MarsTrack\Gathered Data\TempData(" + legalDate + ").txt", "<[" + DateTime.Now.ToString() + "]>" + tempData + Environment.NewLine);
                     dataTextBox.Text += tempData;
                 }
             }
@@ -94,7 +94,7 @@ namespace Test_Data_Gatherer
                 {
                     commPort.Write("HUMID");
                     string humidData = commPort.ReadLine();
-                    File.AppendAllText(@"D:\Projects\Challenges\MarsTrack\MarsTrack\Gathered Data\HumidData(" + legalDate + ").txt", "<[" + DateTime.Now.ToString() + "]>" + humidData + Environment.NewLine);
+                    File.AppendAllText(@"E:\Git Repos\MarsTrack\MarsTrack\Gathered Data\HumidData(" + legalDate + ").txt", "<[" + DateTime.Now.ToString() + "]>" + humidData + Environment.NewLine);
                     dataTextBox.Text += humidData;
                 }
             }
@@ -114,7 +114,7 @@ namespace Test_Data_Gatherer
                 {
                     commPort.Write("SOILM");
                     string soilMoist = commPort.ReadLine();
-                    File.AppendAllText(@"D:\Projects\Challenges\MarsTrack\MarsTrack\Gathered Data\SoilMoistData(" + legalDate + ").txt", "<[" + DateTime.Now.ToString() + "]>" + soilMoist + Environment.NewLine);
+                    File.AppendAllText(@"E:\Git Repos\MarsTrack\MarsTrack\Gathered Data\SoilMoistData(" + legalDate + ").txt", "<[" + DateTime.Now.ToString() + "]>" + soilMoist + Environment.NewLine);
                     dataTextBox.Text += soilMoist;
                 }
             }

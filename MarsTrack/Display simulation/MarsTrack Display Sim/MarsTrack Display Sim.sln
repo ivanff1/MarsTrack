@@ -1,0 +1,25 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 15
+VisualStudioVersion = 15.0.28010.2046
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MarsTrack Display Sim", "MarsTrack Display Sim\MarsTrack Display Sim.csproj", "{55767F99-5C8E-47D9-B042-E210EA6E785E}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{55767F99-5C8E-47D9-B042-E210EA6E785E}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{55767F99-5C8E-47D9-B042-E210EA6E785E}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{55767F99-5C8E-47D9-B042-E210EA6E785E}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{55767F99-5C8E-47D9-B042-E210EA6E785E}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {78DAEB43-45F2-4567-AB47-A0313D30C87F}
+	EndGlobalSection
+EndGlobal

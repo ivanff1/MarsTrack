@@ -1,0 +1,10 @@
+E:\Git Repos\MarsTrack\MarsTrack\Display simulation\MarsTrack Display Sim\MarsTrack Display Sim\bin\Debug\MarsTrack Display Sim.exe.config
+E:\Git Repos\MarsTrack\MarsTrack\Display simulation\MarsTrack Display Sim\MarsTrack Display Sim\bin\Debug\MarsTrack Display Sim.exe
+E:\Git Repos\MarsTrack\MarsTrack\Display simulation\MarsTrack Display Sim\MarsTrack Display Sim\bin\Debug\MarsTrack Display Sim.pdb
+E:\Git Repos\MarsTrack\MarsTrack\Display simulation\MarsTrack Display Sim\MarsTrack Display Sim\obj\Debug\MarsTrack_Display_Sim.Display_Sim.resources
+E:\Git Repos\MarsTrack\MarsTrack\Display simulation\MarsTrack Display Sim\MarsTrack Display Sim\obj\Debug\MarsTrack_Display_Sim.MainUC.resources
+E:\Git Repos\MarsTrack\MarsTrack\Display simulation\MarsTrack Display Sim\MarsTrack Display Sim\obj\Debug\MarsTrack_Display_Sim.Properties.Resources.resources
+E:\Git Repos\MarsTrack\MarsTrack\Display simulation\MarsTrack Display Sim\MarsTrack Display Sim\obj\Debug\MarsTrack Display Sim.csproj.GenerateResource.cache
+E:\Git Repos\MarsTrack\MarsTrack\Display simulation\MarsTrack Display Sim\MarsTrack Display Sim\obj\Debug\MarsTrack Display Sim.csproj.CoreCompileInputs.cache
+E:\Git Repos\MarsTrack\MarsTrack\Display simulation\MarsTrack Display Sim\MarsTrack Display Sim\obj\Debug\MarsTrack Display Sim.exe
+E:\Git Repos\MarsTrack\MarsTrack\Display simulation\MarsTrack Display Sim\MarsTrack Display Sim\obj\Debug\MarsTrack Display Sim.pdb
