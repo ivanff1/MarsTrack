@@ -74,8 +74,8 @@ namespace Test_Data_Gatherer
                 {                    
                     commPort.Write("TEMPD");
                     string tempData = commPort.ReadLine();
-                    File.AppendAllText(@"E:\Git Repos\MarsTrack\MarsTrack\Gathered Data\TempData(" + legalDate + ").txt", "<[" + DateTime.Now.ToString() + "]>" + tempData + Environment.NewLine);
-                    dataTextBox.Text += tempData;
+                    File.AppendAllText(@"E:\Git Repos\MarsTrack\MarsTrack\Gathered Data\TempData(" + legalDate + ").txt", tempData + Environment.NewLine);
+                    dataTextBox.Text += tempData + "°C" + Environment.NewLine;  
                 }
             }
             catch (Exception ex)
@@ -94,8 +94,8 @@ namespace Test_Data_Gatherer
                 {
                     commPort.Write("HUMID");
                     string humidData = commPort.ReadLine();
-                    File.AppendAllText(@"E:\Git Repos\MarsTrack\MarsTrack\Gathered Data\HumidData(" + legalDate + ").txt", "<[" + DateTime.Now.ToString() + "]>" + humidData + Environment.NewLine);
-                    dataTextBox.Text += humidData;
+                    File.AppendAllText(@"E:\Git Repos\MarsTrack\MarsTrack\Gathered Data\HumidData(" + legalDate + ").txt",  humidData + Environment.NewLine);
+                    dataTextBox.Text += humidData + "%" + Environment.NewLine;
                 }
             }
             catch (Exception ex)
@@ -114,8 +114,8 @@ namespace Test_Data_Gatherer
                 {
                     commPort.Write("SOILM");
                     string soilMoist = commPort.ReadLine();
-                    File.AppendAllText(@"E:\Git Repos\MarsTrack\MarsTrack\Gathered Data\SoilMoistData(" + legalDate + ").txt", "<[" + DateTime.Now.ToString() + "]>" + soilMoist + Environment.NewLine);
-                    dataTextBox.Text += soilMoist;
+                    File.AppendAllText(@"E:\Git Repos\MarsTrack\MarsTrack\Gathered Data\SoilMoistData(" + legalDate + ").txt",   soilMoist + Environment.NewLine);
+                    dataTextBox.Text += soilMoist +  "%" + Environment.NewLine; 
                 }
             }
             catch (Exception ex)
@@ -131,6 +131,31 @@ namespace Test_Data_Gatherer
             isConnectedLabel.Text = "Not Connected";
             isConnectedLabel.ForeColor = Color.Red;
             isConnected = false;
+        }
+
+        private void Form1_Load(object sender, EventArgs e)
+        {
+
+        }
+
+        private void averageBtn_Click(object sender, EventArgs e)
+        {
+            double cTemp = 0;
+                double aTemp = 0;
+            string path = "";
+            OpenFileDialog openFDialog = new OpenFileDialog();
+            if (openFDialog.ShowDialog() == DialogResult.OK)
+            {
+                 path = openFDialog.FileName;
+                MessageBox.Show(path);
+            }
+            string[] fileLines = File.ReadAllLines(path);
+            foreach(string line in fileLines)
+            {
+                cTemp += Double.Parse(line);
+            }
+            aTemp = cTemp / fileLines.Count();
+            MessageBox.Show(aTemp.ToString());
         }
     }
 }

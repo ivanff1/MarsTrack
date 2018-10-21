@@ -36,6 +36,7 @@
             this.stopGathering = new System.Windows.Forms.Button();
             this.dataTypeBox = new System.Windows.Forms.ComboBox();
             this.label1 = new System.Windows.Forms.Label();
+            this.averageBtn = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
             // gatherBtn
@@ -118,7 +119,7 @@
             "Temperature",
             "Humidity",
             "Soil Moisture"});
-            this.dataTypeBox.Location = new System.Drawing.Point(584, 138);
+            this.dataTypeBox.Location = new System.Drawing.Point(584, 114);
             this.dataTypeBox.Name = "dataTypeBox";
             this.dataTypeBox.Size = new System.Drawing.Size(204, 37);
             this.dataTypeBox.TabIndex = 6;
@@ -133,11 +134,23 @@
             this.label1.TabIndex = 7;
             this.label1.Text = "Data Type: ";
             // 
+            // averageBtn
+            // 
+            this.averageBtn.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.averageBtn.Location = new System.Drawing.Point(584, 157);
+            this.averageBtn.Name = "averageBtn";
+            this.averageBtn.Size = new System.Drawing.Size(204, 33);
+            this.averageBtn.TabIndex = 8;
+            this.averageBtn.Text = "Average";
+            this.averageBtn.UseVisualStyleBackColor = true;
+            this.averageBtn.Click += new System.EventHandler(this.averageBtn_Click);
+            // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(800, 450);
+            this.Controls.Add(this.averageBtn);
             this.Controls.Add(this.label1);
             this.Controls.Add(this.dataTypeBox);
             this.Controls.Add(this.stopGathering);
@@ -149,6 +162,7 @@
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedSingle;
             this.Name = "Form1";
             this.Text = "Data Gatherer";
+            this.Load += new System.EventHandler(this.Form1_Load);
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -164,6 +178,7 @@
         private System.Windows.Forms.Button stopGathering;
         private System.Windows.Forms.ComboBox dataTypeBox;
         private System.Windows.Forms.Label label1;
+        private System.Windows.Forms.Button averageBtn;
     }
 }
 
