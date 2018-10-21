@@ -36,6 +36,8 @@
             this.stopGathering = new System.Windows.Forms.Button();
             this.dataTypeBox = new System.Windows.Forms.ComboBox();
             this.label1 = new System.Windows.Forms.Label();
+            this.currentBox = new System.Windows.Forms.TextBox();
+            this.label2 = new System.Windows.Forms.Label();
             this.SuspendLayout();
             // 
             // gatherBtn
@@ -117,7 +119,8 @@
             this.dataTypeBox.Items.AddRange(new object[] {
             "Temperature",
             "Humidity",
-            "Soil Moisture"});
+            "Soil Moisture",
+            "Rangefinder(Rough demo)"});
             this.dataTypeBox.Location = new System.Drawing.Point(584, 114);
             this.dataTypeBox.Name = "dataTypeBox";
             this.dataTypeBox.Size = new System.Drawing.Size(204, 37);
@@ -133,11 +136,31 @@
             this.label1.TabIndex = 7;
             this.label1.Text = "Data Type: ";
             // 
+            // currentBox
+            // 
+            this.currentBox.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.currentBox.Location = new System.Drawing.Point(585, 216);
+            this.currentBox.Name = "currentBox";
+            this.currentBox.Size = new System.Drawing.Size(203, 31);
+            this.currentBox.TabIndex = 8;
+            // 
+            // label2
+            // 
+            this.label2.AutoSize = true;
+            this.label2.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.label2.Location = new System.Drawing.Point(580, 180);
+            this.label2.Name = "label2";
+            this.label2.Size = new System.Drawing.Size(124, 24);
+            this.label2.TabIndex = 9;
+            this.label2.Text = "Current Data: ";
+            // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(800, 450);
+            this.Controls.Add(this.label2);
+            this.Controls.Add(this.currentBox);
             this.Controls.Add(this.label1);
             this.Controls.Add(this.dataTypeBox);
             this.Controls.Add(this.stopGathering);
@@ -165,6 +188,8 @@
         private System.Windows.Forms.Button stopGathering;
         private System.Windows.Forms.ComboBox dataTypeBox;
         private System.Windows.Forms.Label label1;
+        private System.Windows.Forms.TextBox currentBox;
+        private System.Windows.Forms.Label label2;
     }
 }
 
