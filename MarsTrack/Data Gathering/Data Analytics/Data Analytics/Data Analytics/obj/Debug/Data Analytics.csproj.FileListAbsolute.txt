@@ -1,0 +1,7 @@
+E:\Git Repos\MarsTrack\MarsTrack\Data Gathering\Data Analytics\Data Analytics\Data Analytics\bin\Debug\Data Analytics.exe.config
+E:\Git Repos\MarsTrack\MarsTrack\Data Gathering\Data Analytics\Data Analytics\Data Analytics\bin\Debug\Data Analytics.exe
+E:\Git Repos\MarsTrack\MarsTrack\Data Gathering\Data Analytics\Data Analytics\Data Analytics\bin\Debug\Data Analytics.pdb
+E:\Git Repos\MarsTrack\MarsTrack\Data Gathering\Data Analytics\Data Analytics\Data Analytics\obj\Debug\Data Analytics.csprojAssemblyReference.cache
+E:\Git Repos\MarsTrack\MarsTrack\Data Gathering\Data Analytics\Data Analytics\Data Analytics\obj\Debug\Data Analytics.csproj.CoreCompileInputs.cache
+E:\Git Repos\MarsTrack\MarsTrack\Data Gathering\Data Analytics\Data Analytics\Data Analytics\obj\Debug\Data Analytics.exe
+E:\Git Repos\MarsTrack\MarsTrack\Data Gathering\Data Analytics\Data Analytics\Data Analytics\obj\Debug\Data Analytics.pdb
