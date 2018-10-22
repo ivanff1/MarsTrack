@@ -38,6 +38,7 @@ namespace Test_Data_Gatherer
                 isConnected = true;
 
                 dataTextBox.Clear();
+                currentBox.Clear();
 
                 if (dataTypeBox.SelectedItem.ToString().ToLower().Equals("temperature"))
                 {
@@ -56,13 +57,24 @@ namespace Test_Data_Gatherer
                 }
                 else
                 {
-
+                    Thread startDataGathering = new Thread(new ThreadStart(GetRangeData));
+                    startDataGathering.Start();
                 }                
             }
             else
             {
             }
            
+        }
+        private void GetRangeData()
+        {
+            while (isConnected == true)
+            {
+                commPort.Write("RANGEF");
+                string rangeData = commPort.ReadLine();
+                dataTextBox.Text += rangeData;
+                currentBox.Text = rangeData;
+            }
         }
         private void GetTempData()
         {
@@ -74,8 +86,9 @@ namespace Test_Data_Gatherer
                 {                    
                     commPort.Write("TEMPD");
                     string tempData = commPort.ReadLine();
-                    File.AppendAllText(@"D:\Projects\Challenges\MarsTrack\MarsTrack\Gathered Data\TempData(" + legalDate + ").txt", "<[" + DateTime.Now.ToString() + "]>" + tempData + Environment.NewLine);
+                    File.AppendAllText(@"E:\Git Repos\MarsTrack\MarsTrack\Gathered Data\TempData(" + legalDate + ").txt", "<[" + DateTime.Now.ToString() + "]>" + tempData + Environment.NewLine);
                     dataTextBox.Text += tempData;
+                    currentBox.Text = tempData;
                 }
             }
             catch (Exception ex)
@@ -94,8 +107,9 @@ namespace Test_Data_Gatherer
                 {
                     commPort.Write("HUMID");
                     string humidData = commPort.ReadLine();
-                    File.AppendAllText(@"D:\Projects\Challenges\MarsTrack\MarsTrack\Gathered Data\HumidData(" + legalDate + ").txt", "<[" + DateTime.Now.ToString() + "]>" + humidData + Environment.NewLine);
+                    File.AppendAllText(@"E:\Git Repos\MarsTrack\MarsTrack\Gathered Data\HumidData(" + legalDate + ").txt", "<[" + DateTime.Now.ToString() + "]>" + humidData + Environment.NewLine);
                     dataTextBox.Text += humidData;
+                    currentBox.Text = humidData;
                 }
             }
             catch (Exception ex)
@@ -114,8 +128,9 @@ namespace Test_Data_Gatherer
                 {
                     commPort.Write("SOILM");
                     string soilMoist = commPort.ReadLine();
-                    File.AppendAllText(@"D:\Projects\Challenges\MarsTrack\MarsTrack\Gathered Data\SoilMoistData(" + legalDate + ").txt", "<[" + DateTime.Now.ToString() + "]>" + soilMoist + Environment.NewLine);
+                    File.AppendAllText(@"E:\Git Repos\MarsTrack\MarsTrack\Gathered Data\SoilMoistData(" + legalDate + ").txt", "<[" + DateTime.Now.ToString() + "]>" + soilMoist + Environment.NewLine);
                     dataTextBox.Text += soilMoist;
+                    currentBox.Text = soilMoist;
                 }
             }
             catch (Exception ex)
@@ -132,5 +147,12 @@ namespace Test_Data_Gatherer
             isConnectedLabel.ForeColor = Color.Red;
             isConnected = false;
         }
+
+        private void Form1_Load(object sender, EventArgs e)
+        {
+
+        }
+
+       
     }
 }

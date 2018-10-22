@@ -1,13 +1,22 @@
-#include <DHT.h>;
+#include <DallasTemperature.h>
+#include <OneWire.h>
+#include <DHT.h>
+
+#define dsTempSensorPin 2
 #define DHTPIN 4     // what pin we're connected to
 #define DHTTYPE DHT22 
 #define trigerPin 7
 #define echoPin 8
 #define moistureSensorPin A0
+
 DHT dhtSensor(DHTPIN,DHTTYPE);
+OneWire oneWireTempSensor(dsTempSensorPin);
+DallasTemperature tempSensor(&oneWireTempSensor);
 
 long duration;
 double distance;
+float dhtTemperature;
+float dsSensorTemperature;
 float temperature;
 float hum;
 String commandStr = "";
@@ -19,6 +28,7 @@ void setup() {
   pinMode(echoPin, INPUT);
   pinMode(moistureSensorPin, INPUT);
   dhtSensor.begin();
+  tempSensor.begin();
 }
 void loop() {
   commandStr = Serial.readString();
@@ -26,18 +36,27 @@ void loop() {
   if(commandStr.equals("TEMPD"))
   {
      Temperature();
-     delay(5);
+     
+     delay(8);
   }
   else if(commandStr.equals("HUMID"))
   {
       Humidity();
-      delay(5);
+      delay(8);
   }
   else if(commandStr.equals("SOILM"))
   {
       SoilMoisture();
-      delay(5);
+      delay(8);
   }   
+  else if(commandStr.equals("RANGEF"))
+  {
+    Rangefinder;
+    delay(5);
+  }
+  else 
+  {
+  }
 
 }
 
@@ -50,29 +69,34 @@ void Rangefinder(){
 
  distance = duration * 0.034/2;
 
- Serial.print("Distance is>>> ");
- Serial.print(distance);
- Serial.println(" CM");
+ Serial.println(distance);
 }
-
 void SoilMoisture()
 {
   long moistureSensorIncomingValue = analogRead(moistureSensorPin);
   moistureSensorIncomingValue =  map(moistureSensorIncomingValue ,650,350,0,100);
-  Serial.print("Mositure Is>>> ");
   Serial.println(moistureSensorIncomingValue);
 }
-
+void DsTemperatureS()
+{
+  tempSensor.requestTemperatures();
+  dsSensorTemperature = tempSensor.getTempCByIndex(0);
+}
+void DhtSensorTemp()
+{
+  dhtTemperature = dhtSensor.readTemperature();
+}
 void Temperature()
 { 
-    temperature = dhtSensor.readTemperature();
-    Serial.print("Temperature is>>> ");
+    DhtSensorTemp();
+    DsTemperatureS();
+  
+    temperature = (dsSensorTemperature+dhtTemperature)/2;
     Serial.println(temperature);
 }
 
 void Humidity()
 {
     hum = dhtSensor.readHumidity();
-    Serial.print("Humidity Is>>> ");
     Serial.println(hum);
 }
