@@ -1,0 +1,1 @@
+Average air temperature is: 23,39°C
