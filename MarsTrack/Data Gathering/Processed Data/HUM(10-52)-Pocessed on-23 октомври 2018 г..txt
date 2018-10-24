@@ -1,0 +1,1 @@
+Average air humidity is: 25,45404%
