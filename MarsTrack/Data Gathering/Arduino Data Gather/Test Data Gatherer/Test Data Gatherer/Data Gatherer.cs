@@ -63,8 +63,7 @@ namespace Test_Data_Gatherer
             }
             else
             {
-            }
-           
+            }           
         }
         private void GetRangeData()
         {
@@ -93,7 +92,6 @@ namespace Test_Data_Gatherer
             }
             catch (Exception ex)
             {
-
                 MessageBox.Show(ex.Message);
             }
         }
@@ -114,7 +112,6 @@ namespace Test_Data_Gatherer
             }
             catch (Exception ex)
             {
-
                 MessageBox.Show(ex.Message);
             }
         }
@@ -135,7 +132,6 @@ namespace Test_Data_Gatherer
             }
             catch (Exception ex)
             {
-
                 MessageBox.Show(ex.Message);
             }
         }
